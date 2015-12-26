@@ -39,6 +39,10 @@ var messages = [{
 io.on('connection', function(socket) {
   console.log('Something connected to socket.io');
   socket.emit('messages', messages);
+  socket.on("new-message", function(data) {
+    messages.push(data);
+    socket.emit('messages', messages);
+  });
 });
 
 server.listen(8080);
