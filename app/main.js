@@ -12,6 +12,12 @@ socket.on("messages", function(data) {
   console.info(data);
   messageCache = data;
 
+  render();
+});
+
+function render() {
+  var data = messageCache;
+
   var html = data.map(function(data, index) {
     return (`
       <form class="message" onsubmit="return likeMessage(messageCache[${index}]);">
@@ -27,8 +33,7 @@ socket.on("messages", function(data) {
   }).join(" ");
 
   document.getElementById('messages').innerHTML = html;
-});
-
+}
 function addMessage(e) {
   var payload = {
     userName:  document.getElementById('username').value,
@@ -53,6 +58,7 @@ function likeMessage(message) {
   }
 
   socket.emit('update-message', message);
+  render();
 
   return false;
 }
