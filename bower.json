@@ -1,0 +1,16 @@
+{
+  "name": "websocket",
+  "version": "0.0.0",
+  "homepage": "https://github.com/aayushranaut/websockets",
+  "authors": [
+    "Aayush Ranaut <aayush.ranaut@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
