@@ -11,7 +11,7 @@ socket.on("messages", function(data) {
         ${data.content.text}
       </a>
     `);
-  });
+  }).join(" ");
 
   document.getElementById('messages').innerHTML = html;
 });
