@@ -12,4 +12,6 @@ socket.on("messages", function(data) {
       </a>
     `);
   });
+
+  document.getElementById('messages').innerHTML = html;
 });
