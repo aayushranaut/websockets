@@ -27,6 +27,7 @@ function render() {
         <a href=${data.content.link} class='message' target='_blank'>
           ${data.content.text}
         </a>
+        <div class="time"> ${data.ts} </div>
         <input type=submit class="likes-count" value="${data.likedBy.length} likes" />
       </form>
     `);

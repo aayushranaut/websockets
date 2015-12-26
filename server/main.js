@@ -51,7 +51,7 @@ io.on('connection', function(socket) {
 
     message.likedBy = data.likedBy;
 
-    io.sockets.emit('messages', messages)
+    io.sockets.emit('messages', messages);
   });
 });
 
