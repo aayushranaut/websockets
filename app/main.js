@@ -43,3 +43,16 @@ function addMessage(e) {
 
   return false;
 }
+
+function likeMessage(message) {
+  var index = message.likedBy.indexOf(userId);
+  if(index < 0) {
+    message.likedBy.push(userId);
+  } else {
+    message.likedBy.splice(index, 1);
+  }
+
+  socket.emit('update-message', message);
+
+  return false;
+}
