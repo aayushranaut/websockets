@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/aayushranaut/websockets/issues"
   },
-  "homepage": "https://github.com/aayushranaut/websockets#readme"
+  "homepage": "https://github.com/aayushranaut/websockets#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "socket.io": "^1.3.7"
+  }
 }
