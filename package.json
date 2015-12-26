@@ -1,0 +1,24 @@
+{
+  "name": "websocket",
+  "version": "1.0.0",
+  "description": "Implementing web sockets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aayushranaut/websockets.git"
+  },
+  "keywords": [
+    "web",
+    "sockets",
+    "javascript"
+  ],
+  "author": "Aayush Ranaut",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aayushranaut/websockets/issues"
+  },
+  "homepage": "https://github.com/aayushranaut/websockets#readme"
+}
