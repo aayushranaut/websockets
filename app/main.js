@@ -10,6 +10,7 @@ socket.on("messages", function(data) {
       <a href=${data.content.link} class='message' target='_blank'>
         ${data.content.text}
       </a>
+      <input type=submit class="likes-count" value="${data.likedBy.length} likes" />
     `);
   }).join(" ");
 
@@ -23,9 +24,10 @@ function addMessage(e) {
       text: document.getElementById('message').value,
       link: document.getElementById('linkAddress').value,
     },
+    likedBy: [],
     ts: Date.now()
   };
   socket.emit("new-message", payload);
-  
+
   return false;
 }
